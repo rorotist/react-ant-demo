@@ -1,0 +1,40 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *:not(canvas, iframe, img, video, svg, svg *, symbol, symbol *) {
+  all: unset;
+  display: revert;
+}; */
+
+*, *::before, *::after {
+  font-family: 'Pretendard', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul,li {
+  list-style: none;
+}
+
+.ant-form-item-explain-error {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+th.ant-table-cell {
+  white-space: nowrap;
+}
+
+.ant-modal-footer {
+  border-top: 1px solid rgb(229 231 235);
+  padding-top: 16px;
+  margin-top: 24px!important;
+}
+
+.control-hidden .ant-input-number .ant-input-number-handler-wrap {
+  visibility: hidden !important;
+}
